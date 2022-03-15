@@ -1,0 +1,82 @@
+body{
+    background: rgb(233, 233, 233);
+}
+
+.container{
+    display: flex;
+}
+
+.widget{
+    margin: auto;
+    margin-top: 25vh;
+
+    background: rgb(161,217,255);
+    background: linear-gradient(0deg, rgba(161,217,255,1) 0%, rgba(32,157,218,1) 52%);
+    width: 200px;
+
+    border-radius: 25px;
+}
+.widget2{
+    margin: auto;
+    margin-top: 25vh;
+
+    background: rgb(170,227,255);
+    background: linear-gradient(0deg, rgba(170,227,255,1) 0%, rgba(152,208,235,1) 8%, rgba(0,136,200,1) 100%);
+    width: 300px;
+
+    border-radius: 25px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+
+    padding: 10%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.city{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.temp{
+    text-align: left;
+    font-size: 3.5rem;
+
+}
+
+.bottom{
+    align-self: end;
+}
+.hilo{
+    display: flex;
+}
+.high{
+    padding-right: 5%;
+}
+#sun{
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+#forecast{
+    padding-left: 0px;
+}
+
+li{
+    list-style-type: none;
+    padding: 2% 0 2% 0;
+}
+
+.description{
+    text-align: center;
+}
+
+.bx{
+    font-size: 1.5rem;
+    float: inline-end;
+}
