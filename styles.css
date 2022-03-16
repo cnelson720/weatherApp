@@ -16,8 +16,10 @@ body{
     background: rgb(161,217,255);
     background: linear-gradient(0deg, rgba(161,217,255,1) 0%, rgba(32,157,218,1) 52%);
     width: 200px;
-
+    margin-right: 0;
     border-radius: 25px;
+
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 .snowFall{
     margin: auto;
@@ -28,6 +30,7 @@ body{
     width: 300px;
 
     border-radius: 25px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 .detailedWeather{
@@ -39,6 +42,7 @@ body{
     height: 425px;
 
     border-radius: 25px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 .info{
@@ -174,4 +178,29 @@ li{
 #sunIcon{
     font-size: 5rem;
     color: yellow;
+}
+
+
+
+/** mobile styling **/
+@media (max-width: 500px) {
+    .detailedWeather{
+        width: 96vw;
+    }
+
+    .bigBox{
+        width: 90vw;
+    }
+    .bigBoxInfo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .smallBox{
+        height: 50%;
+    }
+
+    .smallBoxInfo{
+        font-size: 0.5rem;
+    }
 }
