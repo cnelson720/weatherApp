@@ -23,7 +23,7 @@ const cloudPercDiv = document.getElementById('cloudPerc');
 const windSpeedDiv = document.getElementById('wind_speed');
 const uviDiv = document.getElementById('uvi');
 
-const API_KEY = '109d6fc9488b0e09125f891fd49dbe5b';
+const API_KEY = config.API_KEY;
 
 function getWeatherData(){
     navigator.geolocation.getCurrentPosition((success) =>{
