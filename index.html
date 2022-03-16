@@ -15,10 +15,10 @@
 
 </head>
 
-<body>
+<body onload="getWeatherData()">
     <div class="container">
         
-        <div class="widget">
+        <div class="smallWeather">
 
             <div class="info">
                 <div class="top">
@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="widget2">
+        <div class="snowFall">
 
             <div class="info">
                 <div class='city' id="city">Colorado Springs</div>
@@ -56,6 +56,54 @@
                     </ul>
                 </div>
 
+            </div>
+
+        </div>
+
+        <div class="detailedWeather">
+            <div class="detailedCity">Colorado Springs</div>
+            <div class="detailedInfo">
+
+                <div class="bigBox">
+                    <div class="bigBoxInfo">
+                        <div id="detailedTemp"></div>
+                        <div class="feelsText">Feels like: <div id="feels-like"></div></div>
+
+                        <div id="clouds"></div>
+
+                        <div class="sunrise">Sunrise at: <div id="sunrise"></div></div>
+                        <div class="sunset">Sunset at: <div id="sunset"></div></div>
+                        <i id="sunIcon" class='bx bxs-sun'></i>
+                    </div>
+
+                </div>
+
+                <div class="smallBox">
+                    <div class="smallBoxInfo">
+                        Humidity
+                        <div id="humidity"></div>
+                    </div>
+                </div>
+                <div class="smallBox">
+                    <div class="smallBoxInfo">
+                        Clouds
+                        <div id="cloudPerc"></div>
+                    </div>
+                </div>
+                <div class="smallBox">
+                    <div class="smallBoxInfo">
+                        <div id="windText">Wind Speed</div>
+                        <div id="wind_speed"></div>mph
+                    </div>
+                </div>
+                <div class="smallBox">
+                    <div class="smallBoxInfo">
+                        UVI
+                        <div id="uvi"></div>
+                    </div>
+                </div>
+
+                
             </div>
 
         </div>

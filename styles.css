@@ -1,14 +1,17 @@
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background: rgb(233, 233, 233);
+    margin: 2%;
 }
 
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.widget{
+.smallWeather{
     margin: auto;
-    margin-top: 25vh;
+    margin-top: 10vh;
 
     background: rgb(161,217,255);
     background: linear-gradient(0deg, rgba(161,217,255,1) 0%, rgba(32,157,218,1) 52%);
@@ -16,9 +19,9 @@ body{
 
     border-radius: 25px;
 }
-.widget2{
+.snowFall{
     margin: auto;
-    margin-top: 25vh;
+    margin-top: 10vh;
 
     background: rgb(170,227,255);
     background: linear-gradient(0deg, rgba(170,227,255,1) 0%, rgba(152,208,235,1) 8%, rgba(0,136,200,1) 100%);
@@ -26,6 +29,18 @@ body{
 
     border-radius: 25px;
 }
+
+.detailedWeather{
+    margin-top: 10vh;
+
+    background: rgb(170,227,255);
+    background: linear-gradient(0deg, rgba(170,227,255,1) 0%, rgba(152,208,235,1) 8%, rgba(0,136,200,1) 100%);
+    width: 500px;
+    height: 425px;
+
+    border-radius: 25px;
+}
+
 .info{
     display: grid;
     grid-template-columns: 1fr;
@@ -35,8 +50,6 @@ body{
     row-gap: 0;
 
     padding: 10%;
-
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 .city{
@@ -76,7 +89,89 @@ li{
     text-align: center;
 }
 
-.bx{
+#clear, #snow, #cloudy, #rain{
     font-size: 1.5rem;
     float: inline-end;
+}
+
+.detailedInfo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 0 10px;
+}   
+.detailedCity{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.smallBox{
+    background: rgb(0,99,148);
+    background: linear-gradient(0deg, rgba(0,99,148,1) 0%, rgba(1,59,82,1) 100%);   
+    width: 118px;
+    height: 118px;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-right: 2px;
+
+}
+
+.bigBox{
+    background: rgb(0,99,148);
+    background: linear-gradient(0deg, rgba(0,99,148,1) 0%, rgba(1,59,82,1) 100%);   
+    width: 480px;
+    height: 200px;
+    border-radius: 25px;
+    color: white;
+}
+
+.bigBoxInfo{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#detailedTemp{
+    font-size: 4rem;
+}
+
+#feels-like{
+    font-size: 1.5rem;
+}
+
+.smallBoxInfo{
+    padding: 15%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+#humidity{
+    margin-top: 10%;
+    font-size: 2.5rem;
+}
+
+#cloudPerc{
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+
+#windText{
+    font-size: .75rem;
+}
+
+#wind_speed{
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+
+#uvi{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+#sunIcon{
+    font-size: 5rem;
+    color: yellow;
 }
